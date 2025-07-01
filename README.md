@@ -6,7 +6,7 @@ A clean and responsive Movie Seat Booking User Interface built using **HTML**, *
 
 ## 🚀 Live Demo
 
-🔗 [Visit Live Site on Netlify](https://movie-seats-booking-ui.vercel.app/)
+🔗 [Visit Live Site](https://movie-seats-booking-ui.vercel.app/)
 
 ---
 
