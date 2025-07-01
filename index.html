@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="big-container">
+        <div class="screen"></div>
+        <p >Screen this way </p>
+        <div class="seat-section">
+            <div class="row">
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat sectioning-left Classic-notsoldt"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat sectioning-right Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+            </div>
+            <div class="row">
+                <div class="seat sold "></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat sectioning-left Classic-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat sectioning-right Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+                <div class="seat Classic-notsold"></div>
+            </div><br>
+            <div class="row">
+                <div class="seat sold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sectioning-left sold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sectioning-right Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+            </div>
+            <div class="row">
+                <div class="seat sold "></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sectioning-left Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold Prime-notsold"></div>
+                <div class="seat sectioning-right Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+            </div>
+            <div class="row">
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sectioning-left Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sectioning-right Prime-notsold"></div>
+                <div class="seat Prime-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Prime-notsold"></div>
+            </div><br>
+            <div class="row">
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat sectioning-left Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat sectioning-right Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat sold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+                <div class="seat Recliner-notsold"></div>
+            </div>
+        </div>
+        <div class="seat-indicator">
+            <p>Seats:</p>
+            <div style="display: flex; gap:10px;"><p>Booked</p><div class="seat sold" style="margin-top:5px"></div></div>
+            <div style="display: flex; gap:10px;"><p>Available</p><div class="seat " style="margin-top:5px"></div></div>
+        </div>
+        <div class="booking-details">
+        <h3>Booking Details: </h3>
+        <table>
+            <tr>
+                <td>Seat Type</td>
+                <td>Quantity</td>
+            </tr>
+            <tr id="Classic-row" class="none">
+                <td>Classic</td>
+                <td style="text-align: center;" id="Classic-quantity"></td>
+            </tr>
+            <tr id="Prime-row" class="none">
+                <td>Prime</td>
+                <td style="text-align: center;" id="Prime-quantity"></td>
+            </tr>
+            <tr id="Recliner-row" class="none">
+                <td>Recliner</td>
+                <td style="text-align: center;" id="Recliner-quantity"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td style="text-align: center;" id="Total-value">-</td>
+            </tr>
+        </table>
+        <button class="booking-btn seat-selected">Complete your booking</button>
+        </div>
+    </div>
+    
+    <footer>
+        Have a great day !
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
